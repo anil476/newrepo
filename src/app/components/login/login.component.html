@@ -1,0 +1,20 @@
+<div class="container">
+  <br><br><br>
+  <h2>Please login to your account:</h2>
+  <br>
+  <form class="" (ngSubmit)="login(user)" method="post">
+
+   <div class="form-group">
+    <label for="exampleInputEmail1">Email address:</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="user.email" name="email" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+  <div class="form-group">
+   <label for="exampleInputEmail1">Password:</label>
+   <input type="password" class="form-control" [(ngModel)]="user.password" name="password" placeholder="Password">
+ </div>
+
+<button type="submit" name="button">Submit</button>
+</form>
+</div>
